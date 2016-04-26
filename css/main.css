@@ -1,0 +1,174 @@
+
+/*for 480*/
+body{
+  margin: 0;
+}
+@media only screen and (max-width : 480px) {
+div.container{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+      }
+
+div.yellow, div.orange, div.blue, div.green, div.pink {
+    width: "100%";
+    height: 320px;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+div.red{
+  background-color: red;
+  width: "100%";
+  display: flex;
+  margin-bottom: 10px;
+  height: 70px;
+}
+
+div.yellow{
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+}
+div.yellow:nth-child(2), div.yellow:nth-child(3), div.yellow:nth-child(4) {
+        display: none;
+    }
+div.orange{
+    background-color: orange;
+}
+div.green{
+    background-color: green;
+}
+div.pink{
+    background-color: pink;
+}
+div.blue{
+    background-color: blue;
+    }
+}
+@media only screen and (min-width : 481px) and (max-width : 767px) {
+div.container{
+  display: flex;
+  flex-flow: column;
+      }
+
+div.yellow, div.orange, div.blue, div.green, div.pink {
+display: flex;
+margin-bottom: 7px;
+}
+div.red{
+  display: flex;
+  margin-bottom: 7px;
+  background-color: red;
+  height: 50px;
+  order: 1;
+}
+div.container_yellow{
+  display:flex;
+  order: 3;
+}
+div.yellow {
+  background-color: yellow;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 100%;
+}
+div.yellow:nth-child(2), div.yellow:nth-child(3), div.yellow:nth-child(4) {
+        display: none;
+    }
+
+div.container_orange_green {
+        width: 100%;
+        height: 170px;
+        display: flex;
+        flex-direction: row;
+        order: 2;
+      }
+div.orange{
+    background-color: orange;
+    margin-right: 7px;
+    flex-grow: 2;
+}
+div.green{
+    background-color: green;
+    flex-grow: 1;
+}
+div.pink{
+    background-color: pink;
+    width: 100%;
+    height: 320px;
+    order: 4;
+  }
+div.blue{
+    background-color: blue;
+    height: 200px;
+    order:5;
+}
+}
+/*for 768*/
+@media only screen and (min-width : 768px){
+div.container{
+  display: flex;
+  flex-flow: column;
+      }
+      div.yellow, div.orange, div.blue, div.green, div.pink {
+      display: flex;
+      margin-bottom: 7px;
+      }
+      div.red{
+        background-color: red;
+        height: 50px;
+        margin-bottom: 7px;
+        order: 1;
+      }
+      div.container_yellow {
+        width: 80%;
+        height: auto;
+        display: flex;
+        order: 3;
+        flex-wrap: wrap;
+          }
+      div.yellow{
+        background-color: yellow;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        height: 180px;
+        margin-right: 1%;
+      }
+      div.container_orange_green {
+                  order: 2;
+                }
+        div.orange{
+          background-color: orange;
+          height: 150px;
+          width: 100%;
+                  }
+          div.green{
+          background-color: green;
+          height: 270px;
+          width: 34%;
+          position: absolute;
+          right: 0;
+            }
+
+      div.pink{
+          background-color: pink;
+          width: 65%;
+          height: 400px;
+          justify-content: flex-start;
+          order: 5;
+        }
+      div.blue{
+          background-color: blue;
+          width: 34%;
+          height: 270px;
+          order: 5;
+          align-self: flex-end;
+          position: absolute;
+          top: 490px;
+          right: 0;
+
+      }
+      }
